@@ -1,0 +1,20 @@
+column,type,description
+wine_id,string,Unique wine id
+region,string,"Wine region (Bordeaux, Napa, Burgundy, Rioja, Tuscany, Barossa, Mendoza, generic_new_world)"
+grape,string,Primary grape variety
+price,float,Retail price (USD) — driven mostly by region prestige & scarcity
+vintage_quality,float,QUALITY: weather/vintage conditions (0-10)
+winemaking_score,float,QUALITY: winemaking craft (0-10)
+region_prestige,float,PRICE driver: reputation of the region (0-10)
+region_terroir,float,QUALITY driver: terroir potential of the region (0-10)
+scarcity,float,PRICE driver: limited production / rarity (0-10)
+oak_months,int,Months in oak
+residual_sugar,float,Residual sugar (g/L)
+alcohol,float,Alcohol %
+true_quality,float,"Latent intrinsic quality (0-100 scale) — from terroir/vintage/winemaking, NOT price"
+blind_rating_expert,float,Expert panel rating tasted BLIND (price hidden)
+blind_rating_novice,float,Novice panel rating tasted BLIND (price hidden)
+blind_rating,float,TARGET (regression): blended blind panel rating (price hidden)
+sighted_rating,float,Rating when the PRICE IS SHOWN (expectation/placebo effect)
+overpriced,int,TARGET (binary): 1 if expensive but blind-mediocre (paying for the label)
+value_wine,int,1 if cheap but blind-excellent (a value find)
