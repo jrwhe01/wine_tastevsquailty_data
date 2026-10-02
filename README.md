@@ -1,2 +1,2 @@
-# wine_tastevsquailty_data
-Data clean up and research on a synthetic kaggle dataset.
+# Wine Taste vs Price Data Analysis
+Data clean up and analysis on a synthetic Kaggle dataset.
